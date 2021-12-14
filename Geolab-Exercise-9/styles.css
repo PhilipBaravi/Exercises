@@ -1,0 +1,150 @@
+body * {
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+header {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+header div {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+header div p {
+    font-size: 14px;
+    color: #5863F8;
+    font-weight: 900;
+}
+
+header div h1 {
+    font-size: 42px;
+    font-weight: 900;
+    padding-top: 13px;
+}
+
+/* End of heading */
+
+section {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    overflow: hidden;
+}
+
+.item {
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.item:nth-of-type(2),
+.item:nth-of-type(3),
+.item:nth-of-type(4),
+.item:nth-of-type(5),
+.item:nth-of-type(6) {
+    margin-left: 23px;
+}
+
+#item_img {
+    width: 100%;
+    height: 353px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.item_desc {
+    width: 100%;
+    height: auto;
+    cursor: text;
+}
+
+.item_desc_text {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item_desc h1 {
+    font-size: 14px;
+    color: #5863F8;
+    font-weight: 900;
+}
+
+.item_desc h2 {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.item_desc p {
+    font-size: 14px;
+    color: #b7b7b7;
+    margin-bottom: 30px;
+    font-weight: 800;
+}
+
+.item_desc_text * {
+    margin-top: 17px;
+}
+
+button {
+    margin-top: -60px;
+}
+
+.glider-prev {
+    margin-left: calc(5.2% - 11.5px);
+}
+
+.glider-next {
+    margin-right: 5.2%;
+}
+
+@media screen and (max-width: 1650px) {
+    .glider-next {
+        margin-right: 4.2%;
+    }
+
+    .glider-prev {
+        margin-left: calc(4.2% - 11.5px);
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .glider-next {
+        margin-right: 2.2%;
+    }
+
+    .glider-prev {
+        margin-left: calc(2.2% - 11.5px);
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .glider-next {
+        margin-right: 0.2%;
+    }
+
+    .glider-prev {
+        margin-left: calc(0.2% - 11.5px);
+    }
+}
